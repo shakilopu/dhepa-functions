@@ -1,6 +1,6 @@
 === Dhepa Functions ===
  
-Contributors: shakil.opu
+Contributors: Dhepa
 Tags: dhepa newspaper plugin, plugin tutorial
 Requires at least: 5.5
 Tested up to: 6.0
