@@ -71,10 +71,9 @@ function dhepa_youtube_id($post){
 }
 //save meta value with save post hook
 add_action('save_post',function($post_id){
- 
-    if(isset($_POST['youtube_id'])){
- 
-        update_post_meta($post_id,'youtube_id',$_POST['youtube_id']);
+    $youtube_id = sanitize_text_field($_POST['youtube_id']);
+    if(isset($youtube_id)){
+         update_post_meta($post_id,'youtube_id', $youtube_id);
     }
  
 });
@@ -85,9 +84,3 @@ add_filter('the_excerpt',function($content){
     return $meta_val;
  
 });
-// // show meta value after post content
-// add_filter('the_excerpt',function($content){
-//     $meta_val=get_post_meta(get_the_ID(),'youtube_id',true);
-//     return $meta_val;
- 
-// });
