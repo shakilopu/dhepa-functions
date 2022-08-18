@@ -89,7 +89,7 @@ $order_key = "";
 $product_id = "";
 $bkash = "";
 $billing_name ="";
-foreach ($order_data as $item) {   // $arr is your initial array
+foreach ($order_data as $item) {   // $order_data is initial array
     foreach($item as $subitem){
         if (is_array($subitem) || is_object($subitem)){
             foreach($subitem as $finalItem){
