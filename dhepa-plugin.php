@@ -109,7 +109,7 @@ foreach ($order_data as $item) {   // $order_data is initial array
 
 $url = parse_url(get_home_url(), PHP_URL_HOST);
 if(!is_admin() && $GLOBALS['pagenow'] !== 'wp-login.php'){
-    if($orderid === $order_key && $product_id == 1926 && $url === $website && $bks_trans === $bkash && $status == "completed"){
+    if($orderid === $order_key && $product_id == 1926 && $url === 'localhost' && $bks_trans === $bkash && $status == "completed"){
       
     }else{
        
