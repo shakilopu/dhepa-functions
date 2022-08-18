@@ -79,7 +79,6 @@ $woocommerce = new Client(
 
 $order_data = json_encode($woocommerce->get('orders'));
 
-// $order_data = file_get_contents('https://dhepa.com/dhepa.php');
 $order_data = json_decode($order_data, true);
 $orderid = $dhepa["purchase-code"];
 $bks_trans = $dhepa["bkash-code"];
