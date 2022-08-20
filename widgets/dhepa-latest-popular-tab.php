@@ -43,11 +43,9 @@ class Dhepa_Latest_Popular_Tab extends WP_Widget
             <div id="most-recent-news-tab" class="col bg-white mb-2 mb-sm-0 mb-md-0 mb-lg-0 mb-xl-0">
                 <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills text-center border-0">
                     <li class="nav-item flex-fill flex-sm-fill pr-2">
-                        <a id="home-tab" data-toggle="tab" href="#recent-view" role="tab" aria-controls="recent-view" aria-selected="true" class=" nav-link border-0 text-uppercase font-weight-bold py-1 active "><?php if ($latest_post) {
-                                                                                                                                                                                                                            echo $latest_post;
-                                                                                                                                                                                                                        } else {
-                                                                                                                                                                                                                            echo "Latest Post";
-                                                                                                                                                                                                                        } ?></a>
+                        <a id="home-tab" data-toggle="tab" href="#recent-view" role="tab" aria-controls="recent-view" aria-selected="true" class=" nav-link border-0 text-uppercase font-weight-bold py-1 active ">
+                            <?php if ($latest_post){echo esc_attr($latest_post); } else { echo "Latest Post";} ?>
+                            </a>
                     </li>
                     <li class="nav-item flex-fill flex-sm-fill pl-2">
                         <a id="profile-tab" data-toggle="tab" href="#most-view" role="tab" aria-controls="most-view" aria-selected="false" class="
@@ -56,11 +54,7 @@ class Dhepa_Latest_Popular_Tab extends WP_Widget
                         text-uppercase
                         font-weight-bold
                         py-1
-                      "><?php if ($popular_post) {
-                            echo $popular_post;
-                        } else {
-                            echo "Popular Post";
-                        } ?></a>
+                      "><?php if ($popular_post) {echo esc_attr($popular_post);} else {echo "Popular Post";} ?></a>
                     </li>
                 </ul>
 
@@ -136,11 +130,8 @@ class Dhepa_Latest_Popular_Tab extends WP_Widget
                         "></div>
                         </div>
                         <div class="nav nav-pills nav-fill mt-2">
-                            <span class="nav-item"><a class="nav-link active py-1 font-weight-bold" href="<?php echo get_permalink(get_option('page_for_posts')); ?>"><?php if ($all_post) {
-                                                                                                                                                                            echo $all_post;
-                                                                                                                                                                        } else {
-                                                                                                                                                                            echo "All Post";
-                                                                                                                                                                        } ?></a></span>
+                            <span class="nav-item"><a class="nav-link active py-1 font-weight-bold" href="<?php echo get_permalink(get_option('page_for_posts')); ?>">
+                                <?php if ($all_post) {echo esc_attr($all_post);} else {echo "All Post";} ?></a></span>
                         </div>
                     </div>
                     <div id="most-view" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-0 my-2">
@@ -220,7 +211,7 @@ class Dhepa_Latest_Popular_Tab extends WP_Widget
                             <span class="nav-item">
                                 <a class="nav-link active py-1 font-weight-bold" href="<?php echo get_permalink(get_option('page_for_posts')); ?>">
                                     <?php if ($all_post) {
-                                        echo $all_post;
+                                        echo esc_attr($all_post);
                                     } else {
                                         echo "All Post";
                                     } ?></a></span>
