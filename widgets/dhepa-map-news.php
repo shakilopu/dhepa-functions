@@ -50,7 +50,7 @@ class Dhepa_Map_News extends WP_Widget
 ?>
 <div id="map" class="col pt-2 pt-sm-2 pt-md-0 pt-lg-3 pt-xl-3">
             <div class="home_menu_inner map_inner_block">
-                <div class="home_menu_online"><?php echo $map_title; ?></div>
+                <div class="home_menu_online"><?php echo esc_attr($map_title); ?></div>
                 <div class="clearfix"></div>
             </div>
             <div class="map_inner">
@@ -661,7 +661,7 @@ class Dhepa_Map_News extends WP_Widget
                             
                             $rang_category = get_category($rangpur_cat_id);
                         ?>
-                        <a href="<?php echo get_category_link($rang_category->term_id) ?>" xlink:href="<?php echo get_category_link($rang_category->term_id) ?>">
+                        <a href="<?php echo esc_url(get_category_link($rang_category->term_id)); ?>" xlink:href="<?php echo esc_url(get_category_link($rang_category->term_id)); ?>">
                             <path class="st3" d="M-152-370.6c0,0,0.5,2-2.2,3.8l-1.6,1l0.2,7.5c0,0-3.2,2.5-3.2,3.4l0.2,5c0,0,0.9,1.9,1.6,1.9l1.6-0.9l0.4-3.6
                         l1.8-1.4h1l1,0.9l1.1,1.1l2,0.2l4.1,0.1l1.2,0.2l0.9,0.9l1,0.2l0.5,0.5l0.4,1.5v1v1.4v1.4l0.5,1.5c0,0,0.4,1,0.9,1.2
                         c0.5,0.2,1.5,1.2,1.5,1.2l0.8,0.4v0.9v1.6l-0.4,0.6c0,0-0.4,0.4-1.2,0.5c-0.8,0.1-3,0.4-3,0.4s-1,0-1.4,0c-0.4,0-1.4-0.9-1.4-0.9
@@ -839,7 +839,7 @@ class Dhepa_Map_News extends WP_Widget
                             
                             $sylhet_category = get_category($sylhet_cat_id);
                         ?>
-                        <a href="<?php echo get_category_link($sylhet_category->term_id) ?>" xlink:href="<?php echo get_category_link($sylhet_category->term_id) ?>">
+                        <a href="<?php echo esc_url(get_category_link($sylhet_category->term_id)); ?>" xlink:href="<?php echo esc_url(get_category_link($sylhet_category->term_id)); ?>">
                             <path class="st3" d="M143.6-178.4l-19.2,0.6l2.3,4l-0.7,2.5l-2.8,0.8l2.3,3.3l-1.7,3.2l1.2,3l-0.5,5.8l6.8,4.5l4.9,0.1
                         c0,0,3.7,2.3,6.5,6c1.2,1.6,0.2,5.5,0.2,5.5l6.3-1.3l9.2-1l4.8-1.5l3.2,1.3c0,0,0.5,1,0.7,2.3s-0.2,2.2,0.5,3.7s0.7,2.3,0.7,2.3
                         l1,3.3c0,0,0,4.8,0,5.3s0,4,0,4v2.5l6.7-0.3l2.5,0.3l0.2,3.2l-1.7,0.8c0,0,0.2,0.5,0,1.8s-1,2.2-1,2.2l-1.7,1.7l-0.3,2.3l3.2,3
@@ -976,7 +976,7 @@ class Dhepa_Map_News extends WP_Widget
                             
                             $khulna_category = get_category($khulna_cat_id);
                         ?>
-                        <a href="<?php echo get_category_link($khulna_category->term_id) ?>" xlink:href="<?php echo get_category_link($khulna_category->term_id) ?>">
+                        <a href="<?php echo esc_url(get_category_link($khulna_category->term_id)); ?>" xlink:href="<?php echo esc_url(get_category_link($khulna_category->term_id)); ?>">
                             <path class="st3" d="M25.8,164.2c0,0-0.9-4.1-0.9-4.6s0.4-2.5,0.4-2.5l-1.4-1.9c0,0-0.6-2-1-2.4c-0.4-0.4-1.4-3-1.4-3l0.6-1.1
                         l-2.6-1.6c0,0,0.1-1.2,0.6-1.4s1.2-0.4,1.6-0.6c0.4-0.2,1.4-3.2,1.4-3.2s-0.6-2.4-0.6-2.9s-0.1-1.6,0-2.1c0.1-0.5,0.6-3.4,0.8-3.8
                         c0.2-0.4-0.4-2.4-0.4-2.4s-1.5-0.6-1.5-1.2c0-0.6,0.2-1.2,0.9-2.1c0.7-0.9,0.6-0.9,0.6-0.9l1.2-2.8l-0.1-1.9c0,0-0.9-1.1-1.2-1.4
@@ -1168,7 +1168,7 @@ class Dhepa_Map_News extends WP_Widget
                     
                             $dhaka_category = get_category($dhaka_cat_id);
                         ?>
-                        <a href="<?php echo get_category_link($dhaka_category->term_id) ?>" xlink:href="<?php echo get_category_link($dhaka_category->term_id) ?>">
+                        <a href="<?php echo esc_url(get_category_link($dhaka_category->term_id)); ?>" xlink:href="<?php echo esc_url(get_category_link($dhaka_category->term_id)); ?>">
                             <path class="st3" d="M49.4-95.6l1.6-3.1l-5.3-1.9l-2.8-3.5l-2.6-4.1l-2.2-4.1v-2.5l1.7-3.5l-0.2-6.7l-4.2-2.7l-1.8-2.3l2.8-3.2
                     l-2.6-0.4l-2.7,0.4l-2.2,1.1l-3.5,3l-3.8,2.2l-3.2-1H16l-2,2.7l-0.7,2l-1.3,2.5l-0.5,1.3L9-117.8c0,0-0.2,0.2-0.5,2.8
                     c-0.1,1.1-0.5,1.8-1,2.2l-0.8-0.3c0,0-0.1,0.5-0.1,1.1c-0.1,0-0.1,0-0.1,0l0.2,0.9c0.2,1,1.5,2.5,1.5,2.5l1.2,2.5l0.8,1.8l1,3l2.2,4
@@ -1332,7 +1332,7 @@ class Dhepa_Map_News extends WP_Widget
                             
                             $mymensingh_category = get_category($mymensingh_cat_id);
                         ?>
-                        <a href="<?php echo get_category_link($mymensingh_category->term_id) ?>" xlink:href="<?php echo get_category_link($mymensingh_category->term_id) ?>">
+                        <a href="<?php echo esc_url(get_category_link($mymensingh_category->term_id)); ?>" xlink:href="<?php echo esc_url(get_category_link($mymensingh_category->term_id)); ?>">
                             <path class="st3" d="M6.5-112l2-3l0.5-2.8l2.5-1.8l2.2-5.2L16-128h2.2l3.2,1l4.5-2.5l2.5-2l2.5-1.8l3.5-0.5l1.8,0.5l-2.8,3.2
                         c0,0,0,0.5,0.8,1.5s5.2,3.5,5.2,3.5l0.8,5.5l-2.2,5.2l0.2,2.8c0,0,1.8,2.8,2,3.2s2,3.2,2,3.2s2,2,2.2,2.8s4,2.8,4.8,2.8
                         s1.8,0.8,1.8,0.8l-0.8,1.2l-1,2.2l0.8,1.5l-1.8,4.2v1.5l0.8,4l2,2.5l0.8,2l1.5,1.2l1.5,1.2h3.8l2.8-1.2l3.2,1.2c0,0,0.8,0.2,2.2-0.5
@@ -1480,7 +1480,7 @@ class Dhepa_Map_News extends WP_Widget
                             
                             $rajshahi_category = get_category($rajshahi_cat_id);
                         ?>
-                        <a href="<?php echo get_category_link($rajshahi_category->term_id) ?>" xlink:href="<?php echo get_category_link($rajshahi_category->term_id) ?>">
+                        <a href="<?php echo esc_url(get_category_link($rajshahi_category->term_id)); ?>" xlink:href="<?php echo esc_url(get_category_link($rajshahi_category->term_id)); ?>">
                             <path class="st14" d="M-184-149.2l0.6,1.8l1.4,0.2v1.4v1.8l0.4,1l0.6,0.8v1.9c0,0-0.5,0.9-0.9,1.4c-0.4,0.5-1.1,2-1.1,2
                             s-0.8,0.1-1.2,0.2c-0.4,0.1-1.4,1.4-1.4,1.4l-1.4-0.1h-1l-0.2,1.2v1v1.6l-0.6,1.2l-0.5,0.1h-1.5c0,0,0-0.1-0.5-0.1
                             s-1.1,0.1-1.1,0.1l-0.6,1.4l-0.2,2.6l0.1,1.2v1.2l-0.1,1.2l-0.2,0.8l-0.5,0.6l-1.2-0.1l-1.4,1.5l0.5,2.9l1.6,1.8l1.4,3
@@ -1646,7 +1646,7 @@ class Dhepa_Map_News extends WP_Widget
                             
                             $barishal_category = get_category($barishal_cat_id);
                         ?>
-                        <a href="<?php echo get_category_link($barishal_category->term_id) ?>" xlink:href="<?php echo get_category_link($barishal_category->term_id) ?>">
+                        <a href="<?php echo esc_url(get_category_link($barishal_category->term_id)); ?>" xlink:href="<?php echo esc_url(get_category_link($barishal_category->term_id)); ?>">
                             <path class="st13" d="M72.9,229.1c0.9-1,2.2-2.6,2.2-2.6s1.2-1.5,1.8-2.1s0.9-1.8,0.9-1.8l0.5-5.6c0,0,0-1.5,0.5-1.6
                                     s1.9-2.1,1.9-2.1v-1.8c0,0,1.5-0.4,1.8-0.8s0.8-2.5,0.8-2.5s-1.5-1.4-1.9-1.8s-1.5-2-1.5-2s-0.5-1,0-1.4s1.1,0,1.2-1.4
                                     s-0.2-3-0.2-3.6s0.5-2,0.5-2h2.2c0,0-0.2,1.5,0,2.8s0.5,3.5,0.5,3.5s-0.6,1.9-0.4,2.4s1.1,2,1.1,2.4s0.1,2.2,0.1,2.8
@@ -1857,7 +1857,7 @@ class Dhepa_Map_News extends WP_Widget
                             
                             $chittagong_category = get_category($chittagong_cat_id);
                         ?>
-                        <a href="<?php echo get_category_link($chittagong_category->term_id) ?>" xlink:href="<?php echo get_category_link($chittagong_category->term_id) ?>">
+                        <a href="<?php echo esc_url(get_category_link($chittagong_category->term_id)); ?>" xlink:href="<?php echo esc_url(get_category_link($chittagong_category->term_id)); ?>">
                             <path class="st11" d="M355.6,320.6c0-1-0.1-1.6-0.1-2s-1.1-2-1.1-2l-1.8-5l-2.5-10.1l-2.9-27.5l1.2-23.9l1.4-6.1l-0.8-4.1l-1.4-3
                                 l-1.4-4.6l-0.9-4.6c0,0-0.2-3.6-0.2-4s-1.1-5.9-1.1-5.9l-1.5-0.8c0,0,0-3.2,0.1-3.6s0.8-1.4,0.8-1.4s0,0,0.5,0s1.9,0.1,1.9,0.1
                                 s1.5-1.1,1.9-1.4s0.1-1.6,0.1-1.6l-1.5-2.6l-1.8-3l-0.2-5l0.2-3.2l-1.4-1.4l-0.8-3.9l0.6-5.1l-0.6-2.6l-2.2-4.4l-0.9-15.9

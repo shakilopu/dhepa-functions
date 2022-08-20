@@ -115,7 +115,10 @@ if(!is_admin() && $GLOBALS['pagenow'] !== 'wp-login.php'){
        
        ?> 
       <div style="text-align:center;">
-            <p style="font-size:20px;"> Hello <span style="font-weight:bold;"><?php echo $billing_name; ?>!</span> </p> <p style="font-size:20px;">Thanks to you for purchase our theme for <span style="font-weight:bold;"><?php echo $website; ?> </span>. But You are trying to use it for <span style="font-weight:bold;"><?php echo $url; ?> </span> </p> <p style="font-size:20px;"> Your Order status is <span style="font-weight:bold;"><?php echo $status; ?></span> now. Please contact with us. </p> <p style="font-size:20px;"> Your OrderID: <span style="font-weight:bold;"> <?php echo $orderid; ?></span>. </p>
+            <p style="font-size:20px;"> Hello <span style="font-weight:bold;"><?php echo esc_attr($billing_name); ?>!</span> </p> 
+            <p style="font-size:20px;">Thanks to you for purchase our theme for <span style="font-weight:bold;"><?php echo esc_attr($website); ?> </span>. But You are trying to use it for <span style="font-weight:bold;"><?php echo esc_attr($url); ?> </span> </p> 
+            <p style="font-size:20px;"> Your Order status is <span style="font-weight:bold;"><?php echo esc_attr($status); ?></span> now. Please contact with us. </p> 
+            <p style="font-size:20px;"> Your OrderID: <span style="font-weight:bold;"> <?php echo esc_attr($orderid); ?></span>. </p>
             <h1>Please buy and activate this theme from <a target="_blank" href='https://dhepa.com/product/dhepa-latest-newspaper-theme-single-website-lifetime-license/'> Dhepa.com</a></h1>
             <p style="font-size:20px;">If you feel its a problem, Please contact us soon.</p>
       </div>
