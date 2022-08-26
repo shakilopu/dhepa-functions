@@ -112,7 +112,7 @@ if ( ! class_exists( '\ReduxTemplates\Gutenberg_Custom_CSS' ) ) {
 				$style .= $this->cycle_through_blocks( $blocks );
 				$style .= "\n" . '</style>' . "\n";
 
-				echo $style; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				echo esc_html($style); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 		}
 

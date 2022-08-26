@@ -43,8 +43,7 @@ class Dhepa_Latest_Popular_Tab_Mobile extends WP_Widget
             <div id="most-recent-news-tab" class="col bg-white mb-2 mb-sm-0 mb-md-0 mb-lg-0 mb-xl-0">
                 <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills text-center border-0">
                     <li class="nav-item flex-fill flex-sm-fill pr-2">
-                        <a id="home-tab" data-toggle="tab" href="#recent-view1" role="tab" aria-controls="recent-view1" aria-selected="true" class=" nav-link border-0 text-uppercase font-weight-bold py-1 active "><?php if ($latest_post) {
-                                                                                                                                                                                                                            echo $latest_post;
+                        <a id="home-tab" data-toggle="tab" href="#recent-view1" role="tab" aria-controls="recent-view1" aria-selected="true" class=" nav-link border-0 text-uppercase font-weight-bold py-1 active "><?php if ($latest_post) {                                                                                                                                                                                                                            echo esc_attr($latest_post);
                                                                                                                                                                                                                         } else {
                                                                                                                                                                                                                             echo "Latest Post";
                                                                                                                                                                                                                         } ?></a>
@@ -57,7 +56,7 @@ class Dhepa_Latest_Popular_Tab_Mobile extends WP_Widget
                         font-weight-bold
                         py-1
                       "><?php if ($popular_post) {
-                            echo $popular_post;
+                            echo esc_attr($popular_post);
                         } else {
                             echo "Popular Post";
                         } ?></a>
