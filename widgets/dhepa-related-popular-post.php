@@ -29,7 +29,7 @@ class Dhepa_Related_Popular_Post extends WP_Widget {
 		echo $args['before_title']; 
 		//Title
 		if($popular_in){
-			echo $popular_in .' - ';
+			echo esc_attr($popular_in .' - ');
 		}else{
 			echo "Popular In - ";
 		} 
@@ -37,7 +37,7 @@ class Dhepa_Related_Popular_Post extends WP_Widget {
 		$get_cat = get_the_category(); 
 		foreach ($get_cat as $key => $value) {
 			if ($key == 0) {
-				echo $value->name;
+				echo esc_attr($value->name);
 			}
 		}
 		//Title
