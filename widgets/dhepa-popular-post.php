@@ -29,7 +29,7 @@ class Dhepa_Popular_Post extends WP_Widget {
 		echo $args['before_title']; 
 		//Title
 		if($popular_post){
-			echo $popular_post;
+			echo esc_attr($popular_post);
 		}else{
 			echo "Popular Post";
 		} 
