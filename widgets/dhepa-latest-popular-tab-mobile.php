@@ -219,7 +219,7 @@ class Dhepa_Latest_Popular_Tab_Mobile extends WP_Widget
                             <span class="nav-item">
                                 <a class="nav-link active py-1 font-weight-bold" href="<?php echo get_permalink(get_option('page_for_posts')); ?>">
                                     <?php if ($all_post) {
-                                        echo $all_post;
+                                        echo esc_attr($all_post);
                                     } else {
                                         echo "All Post";
                                     } ?></a></span>
